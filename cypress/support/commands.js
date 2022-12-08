@@ -4,7 +4,7 @@ Cypress.Commands.add('loginEmpresa', function () {
     cy.get('[data-testid="cnpj"] > .MuiInputBase-input-145').type('77858611000108')
     cy.get('[data-testid="password"] > .MuiInputBase-input-145').type('JVmljosi@1')
     cy.get('[data-testid="signin"]').click()
-    cy.get('.sc-dkIXFM > :nth-child(1) > .MuiButtonBase-root-321').should('be.visible').click()
+   // cy.get('.sc-dkIXFM > :nth-child(1) > .MuiButtonBase-root-321').should('be.visible').click()
     cy.title().should('be.equal', 'Unimed Grande Florianópolis')
 
 })
